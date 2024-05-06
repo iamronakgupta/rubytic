@@ -1,0 +1,19 @@
+<h1>List of all questions</h1>  
+<table>
+  <tr>
+    <th>S no</th>
+    <th>Question Title</th>
+    <th>Attempt</th>
+  </tr>
+
+  <% @questions.each_with_index do |question, index| %>
+    <tr>
+      <td><%= 1 %></td>
+      <td><%= question.title %></td>
+      <td><%= link_to "Attempt", question_path(question) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+<%= link_to "Create a new Question", new_question_path %>
