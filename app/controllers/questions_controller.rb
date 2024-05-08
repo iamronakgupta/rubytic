@@ -25,7 +25,12 @@ class QuestionsController < ApplicationController
   end
 
   def run_test
-
+    @question = Question.find params[:question_id]
+    if @question
+      File.write('test_code.rb', @question.test_code)
+      File.write('ruby_code.rb', params[:code])
+      
+    end
   end
 
   private
