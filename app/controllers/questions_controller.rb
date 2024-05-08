@@ -7,6 +7,7 @@ class QuestionsController < ApplicationController
 
   def show
     @question = Question.find params[:id]
+    @code = ""
   end
 
   def new
@@ -21,6 +22,10 @@ class QuestionsController < ApplicationController
     else
       render :new, status: :unprocessable_entity
     end
+  end
+
+  def run_test
+
   end
 
   private

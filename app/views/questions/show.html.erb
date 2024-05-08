@@ -5,3 +5,14 @@
 
 <h3>Description:</h3>
 <p><%= @question.title %></p>
+<br>
+
+
+<%= form_tag question_run_test_path(@question) do %>
+  
+  <%= label_tag :code %><br>
+  <%= text_area_tag :code %>
+  <br>
+  <%= submit_tag "Run Test" %>
+<% end %>
+
