@@ -71,3 +71,5 @@ gem "rspec-rails"
 
 # tailwind for css
 gem "tailwindcss-rails", "~> 2.6"
+
+gem "devise", "~> 4.9"
