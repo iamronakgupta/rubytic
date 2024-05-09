@@ -1,0 +1,23 @@
+<h1>Edit Question</h1>
+
+<%= form_with model: @question do |form| %>
+
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_field :description %>
+  </div>
+
+  <div>
+    <%= form.label :test_code %><br>
+    <%= form.text_area :test_code %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div
+<% end %>
