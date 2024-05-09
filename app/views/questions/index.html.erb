@@ -1,3 +1,4 @@
+
 <h1>List of all questions</h1>  
 <table>
   <tr>
@@ -8,7 +9,7 @@
 
   <% @questions.each_with_index do |question, index| %>
     <tr>
-      <td><%= 1 %></td>
+      <td><%= index+1 %></td>
       <td><%= question.title %></td>
       <td><%= link_to "Attempt", question_path(question) %></td>
     </tr>

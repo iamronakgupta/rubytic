@@ -66,5 +66,8 @@ group :test do
   gem "selenium-webdriver"
 end
 
+#rspec for running test cases
 gem "rspec-rails"
 
+# tailwind for css
+gem "tailwindcss-rails", "~> 2.6"
